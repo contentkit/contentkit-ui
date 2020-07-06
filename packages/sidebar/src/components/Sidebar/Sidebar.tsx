@@ -1,5 +1,6 @@
 import React from 'react'
-import { Drawer, useMediaQuery, useTheme } from '@material-ui/core'import { withRouter } from 'react-router-dom'
+import { Drawer, useMediaQuery, useTheme } from '@material-ui/core'
+import { withRouter } from 'react-router-dom'
 import { useApolloClient } from '@apollo/client'
 import gql from 'graphql-tag'
 
@@ -29,10 +30,6 @@ function Sidebar (props) {
   const matches = useMediaQuery(`${theme.breakpoints.up('md')} and (-webkit-max-device-pixel-ratio: 2)`)
   const anchor = matches ? Anchor.LEFT : Anchor.TOP
   const { history } = props
-
-  const navigateHome = () => {
-    history.push('/')
-  }
 
   const onLogout = () => {
     window.localStorage.removeItem('token')
@@ -85,4 +82,3 @@ Sidebar.defaultProps = {
 }
 
 export default withRouter(Sidebar)
-
