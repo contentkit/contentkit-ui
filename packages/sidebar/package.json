@@ -1,0 +1,36 @@
+{
+  "name": "@contentkit/sidebar",
+  "version": "0.0.62",
+  "main": "lib/index.js",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "yarn run clean && tsc -p ./config",
+    "watch": "tsc-watch -p ./config",
+    "lint": "standard \"src/**/*.js\" --fix --verbose | snazzy"
+  },
+  "dependencies": {
+    "@contentkit/types": "^0.0.62",
+    "@contentkit/util": "^0.0.62"
+  },
+  "peerDependencies": {
+    "@apollo/client": "^3.0.0-rc.10",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-router-dom": "^4.1.2"
+  },
+  "devDependencies": {
+    "@apollo/client": "^3.0.0-rc.10",
+    "immutable": "3.7.6",
+    "react-router-dom": "^4.1.2",
+    "rimraf": "^3.0.0",
+    "tsc-watch": "3.0.2",
+    "typescript": "^3.7.4"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "gitHead": "af83b1d1596f29fc61c474034b39297155903e59"
+}

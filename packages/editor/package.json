@@ -1,0 +1,46 @@
+{
+  "name": "@contentkit/editor",
+  "version": "0.0.62",
+  "main": "lib/index.js",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "yarn run clean && tsc -p ./config",
+    "watch": "tsc-watch -p ./config",
+    "lint": "standard \"src/**/*.js\" --fix --verbose | snazzy",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@contentkit/components": "^0.0.62",
+    "@contentkit/types": "^0.0.62",
+    "@contentkit/util": "^0.0.62",
+    "append-stylesheet": "^0.0.2",
+    "clsx": "^1.1.1",
+    "decorate-component-with-props": "^1.1.0",
+    "draft-js-export-html": "^1.4.1",
+    "html-element-attributes": "^2.2.1",
+    "lodash.frompairs": "^4.0.1",
+    "lodash.groupby": "^4.6.0",
+    "lodash.pick": "^4.4.0",
+    "prismjs": "^1.20.0",
+    "prop-types": "^15.6.1"
+  },
+  "peerDependencies": {
+    "draft-js": "0.11.6",
+    "immutable": "3.7.6",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "devDependencies": {
+    "draft-js": "^0.11.6",
+    "immutable": "3.7.6",
+    "tsc-watch": "3.0.2",
+    "typescript": "^3.7.4"
+  },
+  "gitHead": "af83b1d1596f29fc61c474034b39297155903e59"
+}

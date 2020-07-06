@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getStartBlock 1`] = `
+Immutable.Record {
+  "key": "B",
+  "type": "code-block",
+  "text": "foo",
+  "characterList": Immutable.List [
+    Immutable.Record {
+      "style": Immutable.OrderedSet [],
+      "entity": null,
+    },
+    Immutable.Record {
+      "style": Immutable.OrderedSet [],
+      "entity": null,
+    },
+    Immutable.Record {
+      "style": Immutable.OrderedSet [],
+      "entity": null,
+    },
+  ],
+  "depth": 0,
+  "data": Immutable.Map {},
+}
+`;
+
+exports[`getStartBlock 2`] = `
+Immutable.Record {
+  "key": "A",
+  "type": "code-block",
+  "text": "bar",
+  "characterList": Immutable.List [
+    Immutable.Record {
+      "style": Immutable.OrderedSet [],
+      "entity": null,
+    },
+    Immutable.Record {
+      "style": Immutable.OrderedSet [],
+      "entity": null,
+    },
+    Immutable.Record {
+      "style": Immutable.OrderedSet [],
+      "entity": null,
+    },
+  ],
+  "depth": 0,
+  "data": Immutable.Map {},
+}
+`;

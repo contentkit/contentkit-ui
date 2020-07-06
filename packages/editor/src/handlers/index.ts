@@ -1,0 +1,5 @@
+export { default as handleReturn } from './handleReturn'
+export { default as keyBindingFn } from './keyBindingFn'
+export { default as handleKeyCommand } from './handleKeyCommand'
+export { default as handleBeforeInput } from './handleBeforeInput'
+export { default as handlePastedText } from './handlePastedText'

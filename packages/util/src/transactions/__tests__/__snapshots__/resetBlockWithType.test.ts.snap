@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`resetBlockWithType should reset the current block to the specified type and set the text to "" 1`] = `
+Immutable.OrderedMap {
+  "A": Immutable.Record {
+    "key": "A",
+    "type": "blockquote",
+    "text": "",
+    "characterList": Immutable.List [],
+    "depth": 0,
+    "data": Immutable.Map {},
+  },
+  "B": Immutable.Record {
+    "key": "B",
+    "type": "unordered-list-item",
+    "text": "foo",
+    "characterList": Immutable.List [
+      Immutable.Record {
+        "style": Immutable.OrderedSet [],
+        "entity": null,
+      },
+      Immutable.Record {
+        "style": Immutable.OrderedSet [],
+        "entity": null,
+      },
+      Immutable.Record {
+        "style": Immutable.OrderedSet [],
+        "entity": null,
+      },
+    ],
+    "depth": 0,
+    "data": Immutable.Map {},
+  },
+  "C": Immutable.Record {
+    "key": "C",
+    "type": "unstyled",
+    "text": "",
+    "characterList": Immutable.List [],
+    "depth": 0,
+    "data": Immutable.Map {},
+  },
+}
+`;

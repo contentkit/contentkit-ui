@@ -1,0 +1,52 @@
+{
+  "name": "@contentkit/components",
+  "version": "0.0.62",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "clean": "rimraf lib",
+    "lint": "standard \"src/**/*.js\" --fix | snazzy",
+    "test": "jest",
+    "build": "yarn run clean && tsc -p ./config",
+    "watch": "tsc-watch -p ./config"
+  },
+  "dependencies": {
+    "@contentkit/sidebar": "^0.0.62",
+    "@contentkit/types": "^0.0.62",
+    "@contentkit/util": "^0.0.62",
+    "clsx": "^1.1.1",
+    "history": "^5.0.0",
+    "safe-s3-key": "^0.0.4"
+  },
+  "peerDependencies": {
+    "draft-js": "*",
+    "immutable": "*",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@apollo/client": "^3.0.0-rc.10",
+    "@material-ui/core": "^5.0.0-alpha.1",
+    "@material-ui/icons": "^5.0.0-alpha.1",
+    "@types/jest": "^24.0.24",
+    "draft-js": "^0.11.6",
+    "graphql": "^15.2.0",
+    "graphql-tag": "^2.10.1",
+    "immutable": "3.7.6",
+    "jest": "^24.9.0",
+    "prop-types-exact": "^1.2.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "tsc-watch": "3.0.2",
+    "typescript": "^3.7.4"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "gitHead": "af83b1d1596f29fc61c474034b39297155903e59"
+}

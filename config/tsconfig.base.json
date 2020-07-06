@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "jsx": "react",
+    "lib": ["es2015", "esnext.asynciterable", "dom"],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "noUnusedParameters": false,
+    "removeComments": true,
+    "sourceMap": true,
+    "strict": false,
+    "target": "es5",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": false,
+    "noImplicitAny": false
+  },
+  "include": ["../packages/*/src/**/*"],
+  "exclude": ["../packages/*/node_modules", "../packages/*/lib", "../examples"]
+}

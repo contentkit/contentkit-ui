@@ -1,0 +1,47 @@
+{
+  "version": "0.0.1",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "lerna": "lerna",
+    "build": "lerna run build --stream",
+    "clean": "lerna run clean --stream",
+    "watch": "lerna run watch --parallel",
+    "lint": "standard \"packages/**/*.js\" --fix --verbose | snazzy",
+    "lerna:publish": "lerna publish patch --no-git-reset --no-git-tag-version --temp-tag --yes",
+    "test": "jest --config ./config/jest.config.js"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "node_modules",
+      "**/__tests__",
+      "packages/**/lib/*.js"
+    ]
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/immutable": "3.8.1",
+    "@types/jest": "^24.0.24",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "immutable": "3.7.4",
+    "jest": "^24.9.0",
+    "lerna": "^3.19.0",
+    "node-sass": "^4.13.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "snazzy": "^8.0.0",
+    "standard": "^14.0.2",
+    "ts-jest": "^24.2.0",
+    "write-npmrc": "^0.0.2"
+  },
+  "publishConfig": {
+    "access": "private",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {}
+}

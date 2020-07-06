@@ -1,0 +1,36 @@
+{
+  "name": "@contentkit/json-editor",
+  "version": "0.0.62",
+  "main": "lib/index.js",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "yarn run clean && tsc -p ./config",
+    "watch": "tsc-watch -p ./config",
+    "lint": "standard \"src/**/*.js\" --fix --verbose | snazzy",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@contentkit/editor": "^0.0.62",
+    "@contentkit/util": "^0.0.62"
+  },
+  "peerDependencies": {
+    "draft-js": "0.11.6",
+    "immutable": "3.7.6",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/draft-js": "^0.10.41",
+    "draft-js": "^0.11.6",
+    "immutable": "3.7.6",
+    "tsc-watch": "3.0.2",
+    "typescript": "^3.7.4"
+  },
+  "gitHead": "af83b1d1596f29fc61c474034b39297155903e59"
+}

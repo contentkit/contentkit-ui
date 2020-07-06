@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`convertGist 1`] = `"<script src=\\"https://gist.github.com/unshift/c7cc5cce1fc2cf034adab9586c7acae8.js\\"></script>"`;

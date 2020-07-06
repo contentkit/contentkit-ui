@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`indentBackward should correctly handle 1`] = `
+Immutable.Record {
+  "key": "A",
+  "type": "unstyled",
+  "text": "bar ",
+  "characterList": Immutable.List [
+    Immutable.Record {
+      "style": Immutable.OrderedSet [],
+      "entity": null,
+    },
+    Immutable.Record {
+      "style": Immutable.OrderedSet [],
+      "entity": null,
+    },
+    Immutable.Record {
+      "style": Immutable.OrderedSet [],
+      "entity": null,
+    },
+    Immutable.Record {
+      "style": Immutable.OrderedSet [],
+      "entity": null,
+    },
+  ],
+  "depth": 0,
+  "data": Immutable.Map {},
+}
+`;
+
+exports[`indentBackward should remove 1 space 1`] = `"  foo "`;
+
+exports[`indentBackward should remove 2 spaces 1`] = `"  foo "`;
+
+exports[`indentBackward should remove 2 spaces 2`] = `""`;
+
+exports[`indentBackward should remove 2 spaces 3`] = `""`;

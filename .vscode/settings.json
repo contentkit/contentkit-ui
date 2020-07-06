@@ -1,0 +1,7 @@
+
+{
+  "problems.autoReveal": false,
+  "javascript.validate.enable": false,
+  "standard.enable": true,
+  "standard.workingDirectories": ["packages/**/src"]
+}

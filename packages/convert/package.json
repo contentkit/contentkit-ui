@@ -1,0 +1,43 @@
+{
+  "name": "@contentkit/convert",
+  "version": "0.0.62",
+  "main": "lib/index.js",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "yarn run clean && tsc -p ./config",
+    "watch": "tsc-watch -p ./config",
+    "lint": "standard \"src/**/*.js\" --fix --verbose | snazzy",
+    "test": "jest"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "dependencies": {
+    "@contentkit/types": "^0.0.62",
+    "@contentkit/util": "^0.0.62",
+    "draft-js-export-html": "^1.4.1",
+    "html-element-attributes": "^2.2.1",
+    "lodash.groupby": "^4.6.0",
+    "lodash.pick": "^4.4.0",
+    "prismjs": "^1.20.0"
+  },
+  "peerDependencies": {
+    "draft-js": "0.11.6",
+    "immutable": "3.7.6",
+    "jest": "^24.5.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/immutable": "3.8.1",
+    "draft-js": "^0.11.6",
+    "immutable": "3.7.6",
+    "tsc-watch": "3.0.2",
+    "typescript": "^3.7.4"
+  },
+  "gitHead": "af83b1d1596f29fc61c474034b39297155903e59"
+}

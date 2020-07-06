@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`convertTable 1`] = `
+"<table>
+<tr>
+<td>lorem</td>
+<td>ipsum</td>
+</tr>
+<tr>
+<td>foo</td>
+<td>bar</td>
+</tr>
+</table>"
+`;

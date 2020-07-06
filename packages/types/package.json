@@ -1,0 +1,23 @@
+{
+  "name": "@contentkit/types",
+  "version": "0.0.62",
+  "main": "lib",
+  "private": false,
+  "keywords": [],
+  "scripts": {
+    "clean": "rimraf lib",
+    "lint": "standard \"src/**/*.js\" --fix | snazzy",
+    "build": "yarn run clean && tsc -p ./config",
+    "watch": "tsc-watch -p ./config"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "draft-js": "0.11.6",
+    "immutable": "3.7.6"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "gitHead": "af83b1d1596f29fc61c474034b39297155903e59"
+}

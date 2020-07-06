@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+- 10
+branches:
+  only:
+  - master
+install:
+  - sudo apt-get install jq
+  - yarn --ignore-engines
+  - lerna bootstrap
+before_script:
+  - sh bin/vault.sh
+script:
+  - yarn run build
+after_success:
+  - yarn run lerna:publish
+  - sh bin/travis.sh
+  - rm .npmrc
