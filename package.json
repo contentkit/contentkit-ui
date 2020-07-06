@@ -35,8 +35,7 @@
     "react-dom": "16.13.1",
     "snazzy": "^8.0.0",
     "standard": "^14.0.2",
-    "ts-jest": "^24.2.0",
-    "write-npmrc": "^0.0.2"
+    "ts-jest": "^24.2.0"
   },
   "publishConfig": {
     "access": "private",

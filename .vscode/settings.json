@@ -3,5 +3,8 @@
   "problems.autoReveal": false,
   "javascript.validate.enable": false,
   "standard.enable": true,
-  "standard.workingDirectories": ["packages/**/src"]
+  "standard.workingDirectories": ["packages/**/src"],
+  "workbench.colorCustomizations": {
+    "editorUnnecessaryCode.border": "#dd7aab"
+  }
 }
