@@ -1,11 +1,6 @@
 import React from 'react'
 import { Toolbar, Popover, useTheme, useMediaQuery } from '@material-ui/core'
-import {
-  Image as FormatImage,
-  Code as InsertCode,
-  Edit as CodeSyntaxIcon
-} from '@material-ui/icons'
-import { RichUtils, EditorState, Modifier } from 'draft-js'
+import { RichUtils } from 'draft-js'
 import { Block, insertAtomic } from '@contentkit/util'
 import { makeStyles } from '@material-ui/styles'
 import { ButtonVariant, ButtonType, buttons } from './buttons'
@@ -32,7 +27,6 @@ const useStyles = makeStyles((theme: any) => ({
     padding: 20
   },
   paper: {
-    // backgroundColor: '#2D3748'
     backgroundColor: 'rgb(239, 243, 245)'
   },
   toolbar: {}
@@ -163,7 +157,6 @@ function EditorToolbar (props: any) {
   }
 
   const isOpen = Boolean(anchorEl && activeButton && activeButton.popover)
-  const toolbarVariant = matches ? 'dense' : 'regular'
   return (
     <div className={classes.root}>
       {renderButtons(toolbarButtons)}

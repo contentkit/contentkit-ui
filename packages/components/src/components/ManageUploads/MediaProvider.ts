@@ -1,4 +1,5 @@
 import gql from 'graphql-tag'
+import { ApolloClient } from '@apollo/client'
 
 export const POST_QUERY = gql`
   query ($id: String!) {
@@ -150,8 +151,8 @@ type MediaProviderConfig = {
 }
 
 class MediaProvider {
-  config: any
-  client: any
+  config: MediaProviderConfig
+  client: ApolloClient<any>
   constructor (config, client) {
     this.config = config
     this.client = client

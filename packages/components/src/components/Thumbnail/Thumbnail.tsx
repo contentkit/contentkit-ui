@@ -9,7 +9,7 @@ type ToolbarButton = {
   onClick: (evt: MouseEvent, ownProps: ThumbnailProps) => void
 }
 
-type Actions = { [key: string]: (...args: any) => Promise<void> }
+type Actions = { [key: string]: (...args: any) => Promise<any> }
 
 type ThumbnailProps = {
   id: string,

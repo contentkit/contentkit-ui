@@ -23,10 +23,6 @@ const useStyles = makeStyles((theme: any) => ({
     justifyContent: 'flex-end',
     alignItems: 'center'
   },
-  // button: {
-  //   marginRight: 15,
-  //   color: '#fbd38d'
-  // },
   button: {
     color: '#cbd5e0',
     fontWeight: 600,

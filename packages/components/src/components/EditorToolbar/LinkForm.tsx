@@ -1,8 +1,6 @@
 import React from 'react'
-import Input from '../Input'
 import { IconButton, InputAdornment, InputBase } from '@material-ui/core'
 import { Close } from '@material-ui/icons'
-import { Modifier, EditorState, SelectionState } from 'draft-js'
 import clearHighlight from '../../util/clearHighlight'
 import applyHighlight from '../../util/applyHighlight'
 import { createLinkAtSelection, getCurrentEntity, removeLinkAtSelection } from '@contentkit/util'
