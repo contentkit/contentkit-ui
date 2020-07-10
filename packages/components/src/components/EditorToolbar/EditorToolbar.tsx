@@ -27,7 +27,8 @@ const useStyles = makeStyles((theme: any) => ({
     padding: 20
   },
   paper: {
-    backgroundColor: 'rgb(239, 243, 245)'
+    backgroundColor: 'rgb(239, 243, 245)',
+    maxWidth: 600
   },
   toolbar: {}
 }))
@@ -171,7 +172,7 @@ function EditorToolbar (props: any) {
         }}
         transformOrigin={{
           vertical: 'top',
-          horizontal: 'center',
+          horizontal: 'right',
         }}
         disableEnforceFocus
         disableRestoreFocus

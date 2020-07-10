@@ -9,7 +9,10 @@ import MediaProvider from '../ManageUploads/MediaProvider'
 
 const useStyles = makeStyles(theme => ({
   flex: {
-    display: 'flex'
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr 1fr',
+    gridTemplateRows: 'auto',
+    gridGap: 20
   }
 }))
 
@@ -22,7 +25,6 @@ type ThumbnailUploadProps = {
   onClick: any,
   mediaProvider: MediaProvider,
   images: ThumbnailImage[],
-  // onUpload: onUpload,
   selection: string[],
   children: any,
   getUploadMediaOptions: any

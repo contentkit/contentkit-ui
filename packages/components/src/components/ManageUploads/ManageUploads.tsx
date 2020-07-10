@@ -5,13 +5,6 @@ import AddIcon from '@material-ui/icons/Add'
 import CancelIcon from '@material-ui/icons/Cancel'
 import { insertAtomic, Block } from '@contentkit/util'
 
-type ThumbnailProps = {
-  selected: boolean,
-  // onSelect: (fileId: string) => void,
-  // deleteImage: (params: { id: string }) => void,
-  src: string
-}
-
 function ThumbnailGridItem (props) {
   const { id, src, actions, buttons } = props
   return (
@@ -19,7 +12,6 @@ function ThumbnailGridItem (props) {
       selected={false}
       src={src}
       id={id}
-      size={120}
       actions={actions}
       buttons={buttons}
     />
@@ -29,7 +21,8 @@ function ThumbnailGridItem (props) {
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'grid',
-    gridTemplateColumns: '1fr 1fr 1fr'
+    gridTemplateColumns: '1fr 1fr 1fr',
+    gridTemplateRows: 'minmax(max-content, 2fr)'
   }
 }))
 

@@ -14,7 +14,6 @@ type Actions = { [key: string]: (...args: any) => Promise<any> }
 type ThumbnailProps = {
   id: string,
   src: string,
-  size: number,
   actions: Actions,
   buttons?: ToolbarButton[],
   selected?: boolean,
@@ -81,7 +80,6 @@ function Thumbnail (props: ThumbnailProps) {
 }
 
 Thumbnail.defaultProps = {
-  size: 100,
   buttons: toolbarButtons
 }
 

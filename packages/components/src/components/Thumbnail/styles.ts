@@ -2,8 +2,6 @@ import { makeStyles } from '@material-ui/styles'
 
 const useStyles = makeStyles(theme => ({
   thumbnail: {
-    width: ({ size }: { size: number }) => size,
-    height: ({ size }: { size: number }) => size,
     position: 'relative',
     boxSizing: 'border-box',
     borderRadius: 3,

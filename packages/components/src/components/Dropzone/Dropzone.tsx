@@ -2,9 +2,6 @@ import React from 'react'
 import useStyles from './styles'
 import clsx from 'clsx'
 import {
-  ActionResponse,
-  CustomRequestParams,
-  Fields,
   DropzoneProps,
   DropzoneVariant
 } from '../../types'

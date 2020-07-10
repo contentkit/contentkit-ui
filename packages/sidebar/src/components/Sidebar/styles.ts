@@ -35,6 +35,19 @@ const useStyles = makeStyles((theme: any) => ({
     '&:hover': {
       cursor: 'pointer'
     }
+  },
+  listItem: {
+    display: 'inline-flex',
+    justifyContent: 'center',
+    height: 50,
+    width: 50,
+    margin: 5,
+    '& > img': {
+      margin: 0
+    }
+  },
+  divider: {
+    borderColor: '#2D3748'
   }
 }))
 
