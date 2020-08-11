@@ -12,7 +12,9 @@ import {
   YouTube,
   Image as FormatImage,
   Code as InsertCode,
-  Edit as CodeSyntaxIcon
+  Edit as CodeSyntaxIcon,
+  Fullscreen,
+  FullscreenExit
 } from '@material-ui/icons'
 import { Block, Inline } from '@contentkit/util'
 import ManageUploads from '../ManageUploads'
@@ -28,12 +30,15 @@ export enum ButtonVariant {
 
   SET_BLOCK_DATA = 'set_block_data',
 
-  INSERT_BLOCK = 'insert_block'
+  INSERT_BLOCK = 'insert_block',
+  ENTER_FULLSCREEN = 'enter_fullscreen',
+  EXIT_FULLSCREEN = 'exit_fullscreen'
 }
 
 export enum ButtonType {
   INLINE = 'inline',
-  BLOCK = 'block'
+  BLOCK = 'block',
+  ACTION = 'action'
 }
 
 export type ToolbarButton = {
@@ -152,5 +157,10 @@ export const buttons = [
     variant: ButtonVariant.TOGGLE_BLOCK_TYPE,
     Icon: YouTube,
     blockType: Block.VIDEO
+  },
+  {
+    type: ButtonType.ACTION,
+    Icon: Fullscreen,
+    variant: ButtonVariant.ENTER_FULLSCREEN
   }
 ]
