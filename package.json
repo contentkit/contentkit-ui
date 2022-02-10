@@ -30,7 +30,7 @@
     "immutable": "3.7.4",
     "jest": "^24.9.0",
     "lerna": "^3.19.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "snazzy": "^8.0.0",
